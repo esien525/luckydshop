@@ -1,0 +1,71 @@
+*+html{overflow:auto;}
+
+#constuction-box,
+#intro-box{behavior:url(js/PIE.htc);}
+
+.works-list li a .mask-1, 
+.works-list li a .img-container, 
+.list-1 li a .mask-3, 
+.list-1 li a .mask-4, 
+.list-3 li a .mask-3, 
+.list-3 li a .mask-4,
+.hover .mask,
+.hover-small .mask-small,
+.button .bg-button1,
+.button .bg-button2,
+.cs-buttons a .slider-mask,
+.cs-buttons a .slider-mask1 {display:none;}
+
+.cs-buttons a {background:url(../images/bg-pagination-ie.png) 0 0 no-repeat;}
+.cs-buttons a:hover {background-position:0 -20px;}
+.cs-buttons a.cs-active {background:url(../images/bg-pagination-ie.png) 0 -20px no-repeat;}
+
+.button:hover {color:#7d7d7d; border:1px solid #ebebeb; background:#f7f7f7;}
+
+.hover .mask-ie{
+	background:url(../images/img-marker.png) center center no-repeat #fff;
+	cursor:pointer;
+	bottom: 50%;
+	left: 50%;
+	right: 50%;
+	top: 50%;
+	opacity: 0;
+	position: absolute;
+	z-index:3;
+	margin:4px;
+}
+.hover-small .mask-small-ie{
+	background:url(../images/img-marker-small.png) center center no-repeat #fff;
+	cursor:pointer;
+	bottom: 50%;
+	left: 50%;
+	right: 50%;
+	top: 50%;
+	opacity: 0;
+	position: absolute;
+	z-index:3;
+	margin:4px;
+}
+
+
+.list-1 li a{background:url(../images/marker-1-ie.png) 1px 5px no-repeat;}
+.list-1 li a:hover {color:#999898; background-position:1px -55px;}
+
+.list-3 li a{background:url(../images/marker-3-ie.png) 1px 5px no-repeat;}
+.list-3 li a:hover {color:#0075a0; background-position:1px -55px;}
+
+
+
+#text_slider div{background:none !important}
+
+#advanced ul li.trigger_adv > span,
+dl#accordion dt{
+	behavior:url(js/PIE.htc);
+	position:relative;
+}
+
+div.caption {background:url(../images/bg.gif) center top repeat;}
+.kwicks li{filter:alpha(opacity=50)}
+.kwicks li.active{filter:alpha(opacity=100)}
+
+

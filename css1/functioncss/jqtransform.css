@@ -1,0 +1,330 @@
+#form-1, #form-2, #form-3 {display:block; padding:0px 0 0 0px;}
+#form-4, #form-5 {display:block; padding:0px 0 0 1px;}
+
+#form-1 .button .txt {padding:4px 9px 4px 8px;}
+.width-1{float:left; width:140px;}
+.width-2{float:left; width:300px;}
+.width-3{float:left; width:133px;}
+.width-4{float:left; width:84px;}
+.width-5{float:left; width:232px;}
+.width-6{float:left; width:83px;}
+.width-7 {float:left; width:271px; margin-left:1px;}
+.width-8{float:left; width:56px;}
+.width-9{float:left; width:71px;}
+.width-10{width:140px;margin-bottom:5px;}
+/**/
+
+.text-form { 
+	display:block;
+	width:100%;
+	font-size:12px; 
+	line-height:17px; 
+	color:#636363; 
+	padding:4px 0px 6px 0px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.text-form1 { 
+	float:left;
+	width:20px;
+	font-size:12px; 
+	line-height:23px; 
+	color:#adadad; 
+	padding:0px 0px 0px 0px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/* form-2 */
+.text-form2 { 
+	float:left;
+	width:37px;
+	font-size:12px; 
+	line-height:17px;
+	letter-spacing:1px;
+	color:#999898; 
+	padding:3px 0px 0px 0px;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.text-form3 { 
+	float:left;
+	width:44px;
+	font-size:12px; 
+	line-height:17px;
+	letter-spacing:1px;
+	color:#999898; 
+	padding:3px 0px 0px 1px;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.text-form4 { 
+	float:left;
+	width:37px;
+	font-size:12px; 
+	line-height:17px;
+	color:#999898; 
+	padding:3px 0px 0px 1px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/* */
+.text-form5 { 
+	display:block;
+	width:100%;
+	font-size:12px; 
+	line-height:17px; 
+	color:#999898; 
+	padding:3px 0px 2px 0px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.rows {
+	height:55px; 
+	margin:0px 0 0px 0;
+	width:100%;
+}
+.rows-1 {
+	height:54px; 
+	width:100%;
+	margin:0px 0 0px 0; 
+}
+.rows-2 {
+	height:60px; 
+	width:100%;
+	margin:0px 0 0px 0; 
+}
+.rows-3 {
+	height:43px; 
+	width:100%;
+	margin:0px 0 0px 0; 
+}
+
+.buttons {text-align:right; padding:6px 2px 0px 0px;}
+.buttons-1 {text-align:right; padding:11px 1px 0px 0px;}
+
+/* -------------
+ * Inputs
+ * ------------- */
+.width-1 input {
+	font-size:12px;
+	line-height: 1.23em;
+	color:#636363;
+	margin: 0px;
+	padding:5px 5px;
+	width: 200px !important;
+	position:relative;
+	height: 14px;
+	background:#fff;
+	border:1px solid #ebebeb;
+	z-index:1;
+	float:left;
+}
+.width-10 input {
+	font-size:12px;
+	line-height: 1.23em;
+	color:#636363;
+	margin: 0px;
+	padding:5px 5px;
+	width: 190px !important;
+	position:relative;
+	height: 14px;
+	background:#ffffff;
+	border:1px solid #ebebeb;
+	z-index:999;
+	
+}
+.width-11 input {
+	font-size:12px;
+	line-height: 1.23em;
+	color:#636363;
+	margin: 0px;
+	padding:7px 5px;
+	width: 350px !important;
+	position:relative;
+	height: 14px;
+	background:#fff;
+	border:1px solid #ebebeb;
+	z-index:1;
+	margin-bottom:5px;
+	
+}
+.width-11 select {
+
+	border:1px solid #ebebeb;
+	padding:5px 5px;
+
+	
+}
+/* -------------
+ * Selects
+ * ------------- */
+/* #form-1 */
+.width-1 .jqTransformSelectWrapper, .width-2 .jqTransformSelectWrapper{
+	position:relative;
+	height: 24px;
+	background:#fff;
+	border:1px solid #ebebeb;
+	margin: 0px 0 0 0px;
+}
+.width-1 .jqTransformSelectWrapper div, .width-2 .jqTransformSelectWrapper div {
+	font-size:12px;
+	line-height: 1.23em;
+	color:#999898;
+	white-space: nowrap;
+	height: 20px;
+	padding: 4px 0 0 8px;
+	overflow: hidden;
+	cursor:pointer;
+}
+
+.width-1 .jqTransformSelectWrapper ul, .width-2 .jqTransformSelectWrapper ul {
+	position: absolute;
+	z-index:5;
+	left: -1px;
+	list-style: none;
+	background:#fff;
+	border:1px solid #ebebeb;
+	display: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+/* form-2 */
+.width-3 .jqTransformSelectWrapper, .width-4 .jqTransformSelectWrapper  {
+	position:relative;
+	height: 21px;
+	background:none;
+	border:1px solid #dadada;
+	margin: 0px 0 0 0px;
+}
+.width-3 .jqTransformSelectWrapper div, .width-4 .jqTransformSelectWrapper div{
+	font-size:12px;
+	line-height: 1.23em;
+	color:#999898;
+	white-space: nowrap;
+	height: 17px;
+	padding: 4px 0 0 8px;
+	overflow: hidden;
+	cursor:pointer;
+}
+
+.width-3 .jqTransformSelectWrapper ul, .width-4 .jqTransformSelectWrapper ul {
+	position: absolute;
+	z-index:5;
+	left: -1px;
+	list-style: none;
+	background:url(../images/bg.gif) center top repeat;
+	border:1px solid #dadada;
+	display: none;
+	margin: 0;
+	overflow: auto;
+}
+/* */
+/* form-3, form-4, form-5 */
+
+
+.width-5 .jqTransformSelectWrapper, .width-6 .jqTransformSelectWrapper, .width-7 .jqTransformSelectWrapper, .width-8 .jqTransformSelectWrapper, .width-9 .jqTransformSelectWrapper {
+	position:relative;
+	height: 24px;
+	border:1px solid #737373;
+	background:#292929;
+	margin: 0px 0 0 0px;
+}
+.width-5 .jqTransformSelectWrapper div, .width-7 .jqTransformSelectWrapper div{
+	font-size:12px;
+	line-height: 1.23em;
+	color:#999898;
+	white-space: nowrap;
+	height: 20px;
+	padding: 4px 0 0 8px;
+	overflow: hidden;
+	cursor:pointer;
+}
+.width-6 .jqTransformSelectWrapper div, .width-8 .jqTransformSelectWrapper div, .width-9 .jqTransformSelectWrapper div{
+	font-size:12px;
+	line-height: 1.23em;
+	color:#6b6b6b;
+	white-space: nowrap;
+	height: 19px;
+	padding: 5px 0 0 7px;
+	overflow: hidden;
+	cursor:pointer;
+}
+
+.width-5 .jqTransformSelectWrapper ul, .width-6 .jqTransformSelectWrapper ul, .width-7 .jqTransformSelectWrapper ul, .width-8 .jqTransformSelectWrapper ul, .width-9 .jqTransformSelectWrapper ul {
+	position: absolute;
+	z-index:5;
+	left: -1px;
+	list-style: none;
+	border:1px solid #727272;
+	background:#292929;
+	display: none;
+	margin: 0;
+	overflow: auto;
+}
+
+
+
+#form-1 .jqTransformSelectWrapper  a.jqTransformSelectOpen {
+	display: block;
+	position: absolute;
+	right: 0px;
+	top:0px;
+	width: 26px;
+	height: 24px;
+	background: url(../images/select.gif) no-repeat center center;
+}
+
+.jqTransformSelectWrapper ul a {
+	display: block;
+	padding: 3px 8px;
+	text-decoration: none;
+	color:#999898;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.23em;
+}
+
+
+#form-1 .jqTransformSelectWrapper ul a.selected, #form-2 .jqTransformSelectWrapper ul a.selected {
+	color:#000;
+}
+
+#form-1 .jqTransformSelectWrapper ul a:hover, #form-1 .jqTransformSelectWrapper ul a.selected:hover, #form-2 .jqTransformSelectWrapper ul a:hover, #form-2 .jqTransformSelectWrapper ul a.selected:hover{
+	color:#000;
+}
+
+#form-2 .jqTransformSelectWrapper  a.jqTransformSelectOpen {
+	display: block;
+	position: absolute;
+	right: 1px;
+	top:1px;
+	width: 19px;
+	height: 19px;
+	background: url(../images/select-1.png) no-repeat center center;
+}
+
+#form-3 .jqTransformSelectWrapper  a.jqTransformSelectOpen, #form-4 .jqTransformSelectWrapper  a.jqTransformSelectOpen, #form-5 .jqTransformSelectWrapper  a.jqTransformSelectOpen {
+	display: block;
+	position: absolute;
+	right: -1px;
+	top:-1px;
+	width: 27px;
+	height: 26px;
+	background: url(../images/select-2.gif) no-repeat center center;
+}
+
+#form-3 .jqTransformSelectWrapper ul a.selected, #form-4 .jqTransformSelectWrapper ul a.selected, #form-5 .jqTransformSelectWrapper ul a.selected {
+	color:#fff;
+}
+
+#form-3 .jqTransformSelectWrapper ul a:hover, #form-3 .jqTransformSelectWrapper ul a.selected:hover, #form-4 .jqTransformSelectWrapper ul a:hover, #form-4 .jqTransformSelectWrapper ul a.selected:hover, #form-5 .jqTransformSelectWrapper ul a:hover, #form-5 .jqTransformSelectWrapper ul a.selected:hover {
+	color:#fff;
+}
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.jqTransformHidden {display: none;}

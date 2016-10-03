@@ -1,0 +1,181 @@
+.slider-wrapper {
+	width:918px;
+	height:338px;
+	position:relative;
+	overflow:hidden;
+	z-index:1;
+	border:1px solid #eaeaea;
+	background:url(../images/bg-slider.png) 0 0 repeat;
+	padding:19px 0 0 20px;
+}
+
+#coin-slider{
+	background:url(../images/loader.gif) 50% 50% no-repeat;
+	width:599px;
+	height:318px;
+	position:relative;
+}
+#coin-slider img{display:none;}
+#coin-slider img.first{display:block;}
+.coin-slider{
+	position:relative;
+	width:880px;
+	overflow:hidden;
+	height:318px;
+}
+.coin-slider a{
+	text-decoration:none;
+	display:inline-block;
+	outline:none;
+	border:none;
+}
+.controls {
+	width:880px;
+	height:318px;
+	background:none;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:20;
+}
+.cs-buttons{
+	font-size:0px;
+	line-height:0;
+	position:absolute;
+	bottom:11px;
+	right:105px;
+	z-index:22;
+}
+.cs-buttons a{
+	display:inline-block;
+	overflow: hidden;
+    position: relative;	
+	margin-left:10px;
+	height:20px;
+	width:20px;
+	padding:0;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;		
+}
+
+.cs-buttons a .slider-mask {
+	width: 20px;
+	height: 20px;
+	background:url(../images/bg-pagination.png) 0 0 no-repeat;
+    display: block;
+    left: 0px;
+	top: 0px;
+	position:absolute;
+	-webkit-transition: all 0.4s ease-in-out 0.2s;
+    -moz-transition: all 0.4s ease-in-out 0.2s;
+    -o-transition: all 0.4s ease-in-out 0.2s;
+    transition: all 0.4s ease-in-out 0.2s;
+}
+.cs-buttons a .slider-mask1 {
+   width: 20px;
+   height: 20px;
+   background:url(../images/bg-pagination-hover.png) 0 0 no-repeat;
+   position: absolute;
+   overflow: hidden;
+   left: 0px;
+   top: 0px;
+   opacity: 0;
+   -webkit-transform: scale(0) rotate(-180deg);
+   -moz-transform: scale(0) rotate(-180deg);
+   -o-transform: scale(0) rotate(-180deg);
+   transform: scale(0) rotate(-180deg);
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   -o-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;    
+}
+
+.cs-buttons a:hover .slider-mask {
+   -webkit-transform: scale(0) rotate(180deg);
+   -moz-transform: scale(0) rotate(180deg);
+   -o-transform: scale(0) rotate(180deg);
+   transform: scale(0) rotate(180deg);
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   transition-delay: 0s;
+}
+
+.cs-buttons a:hover .slider-mask1 {
+   opacity: 1;
+   -webkit-transform: scale(1) rotate(0deg);
+   -moz-transform: scale(1) rotate(0deg);
+   -o-transform: scale(1) rotate(0deg);
+   -ms-transform: scale(1) rotate(0deg);
+   transform: scale(1) rotate(0deg);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+
+.cs-buttons a.cs-active{background:url(../images/bg-pagination-hover.png) 0 0 no-repeat;}
+.cs-buttons a.cs-active .slider-mask, .cs-buttons a.cs-active .slider-mask1 {display:none;}
+.cs-prev, .cs-next{
+	display:none;
+}
+
+.cs-prev, .cs-next{
+	display:none;
+}
+
+#coin-slider .banner {
+    height: 277px;
+    right: 1074px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    width: 245px;
+    z-index: 19;
+	
+}
+#coin-slider .banner .banner-content {margin-bottom:15px; display:block;}
+#coin-slider .banner .button-1 {padding:0px 4px 0px 15px;}
+.text-3 {
+	font-size:22px;
+	line-height:29px;
+	color:#00aeef;
+	display:block;
+	margin:0 0 6px 0px;
+}
+.price-big{
+	font-size:29px; 
+	line-height:32px;
+	color:#323232;
+	display:block;
+	margin:0 0 0px 2px;
+}
+#coin-slider .banner:first-child {
+    z-index: 21;
+}
+#coin-slider .banner strong {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+	font-weight:normal;
+	z-index: 21; 
+	width:400px;   
+}
+#coin-slider .banner strong:first-child + strong {
+	z-index: 20;
+	font-weight:normal;
+	font-size:12px;
+	line-height:20px;
+	color:#b1b1b1;
+}
+.banner-separator {
+	width:0px;
+	height:1px;
+	position:absolute;
+	top:125px;
+	left:50%;
+	background:url(../images/banner-separator.png) 0 top repeat-x;
+	display:block;
+}
+

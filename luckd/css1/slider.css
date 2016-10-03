@@ -1,0 +1,25 @@
+.bg{ margin-top:2px;width:735px; height:315px; background:url(../images/bg.png) 50% 0 repeat-x; position:relative; overflow:hidden; z-index:1; text-align:center;-moz-box-shadow: 0 0 5px #888;-webkit-box-shadow: 0 0 5px#888;box-shadow: 0 0 5px #888;}
+.bg2{ background:#fff;padding:0px 0px 0 0px; max-width:735px;width:735px; height:315px; position:relative; margin:0 auto;display:inline-block;}
+.clear{clear:both;line-height:0;font-size:0;overflow:hidden;height:0;width:100%;}
+.wrapper{width:735px; height:315px;overflow:hidden;position:relative;}
+
+#slides {margin: 0 auto; width:735px; height:315px; position:relative;}
+.slides_container {width:735px; height:315px;}
+  .slides_container div.slide img{ width:735px; height:315px;}
+/* Control Nav */
+.pagination {position: absolute; bottom:0px; left:10px;z-index:99; overflow:hidden;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
+.pagination li {font-size:0px;line-height:0;margin-right:2px; display:block; float:left; text-indent:-5000px;}
+.pagination li a {height:12px;width:12px;background: url(../images/pagination.png) -14px 0 no-repeat;display:block;}
+.pagination li.current a,.pagination li a:hover {background:url(../images/pagination.png) 0 0 no-repeat;}
+/* Caption */
+.caption {z-index:500;position:absolute;top:130px;height:220px;width:350px;padding:5px 20px 0 20px; opacity:0; text-align:justify;}
+.logo{}
+.text1{ font-size:2.4em;font-family:'Century Gothic',futura,'URW Gothic L',Verdana,sans-serif;color:white;text-shadow: #87F 0.1em 0.1em 0.1em;text-weight:bold}
+	.text1 span{ display:block; color:#d0351a; margin-top:-10px;}
+.text2{color:white}
+.text3{ font-size:1.4em;font-family:'Century Gothic',futura,'URW Gothic L',Verdana,sans-serif;color:white;text-shadow:1px 1px #000;font-weight:bold}
+.caption1 a{ color:#d0351a; font:15px/18px Arial, Helvetica, sans-serif;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
+	.caption1 a:hover{ text-decoration:none;color:#332623;}
+@media only screen and (min-width: 768px) and (max-width: 995px) {#slides,.slides_container,.slides_container div.slide {width:735px; height:315px;}.caption1{top:30px;left:27px;}}
+@media only screen and (max-width: 767px) {#slides,.slides_container,.slides_container div.slide{width:735px; height:315px;}.pagination {bottom:10px !important; left:15px !important;}.caption1{ display:none;}}
+@media only screen and (min-width: 480px) and (max-width: 767px) {#slides,.slides_container,.slides_container div.slide{width:735px; height:315px;}}

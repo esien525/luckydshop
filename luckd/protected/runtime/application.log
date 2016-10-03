@@ -1,0 +1,1843 @@
+2016/08/16 07:53:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 07:53:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 07:53:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 07:53:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/images/flags/gb.png
+2016/08/16 07:53:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/favicon1.ico
+2016/08/16 07:53:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 07:53:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 07:53:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\UniServer\www\luckd\yii\framework\web\auth\CAccessControlFilter.php:158
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#3 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('participate')
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/partici...')
+#9 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#11 {main} REQUEST_URI=/luckd/product/participate/1?lid=4
+2016/08/16 07:53:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\UniServer\www\luckd\yii\framework\web\auth\CAccessControlFilter.php:158
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#3 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('participate')
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/partici...')
+#9 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#11 {main} REQUEST_URI=/luckd/product/participate/images/flags/gb.png
+2016/08/16 07:53:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\UniServer\www\luckd\yii\framework\web\auth\CAccessControlFilter.php:158
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#3 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('participate')
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/partici...')
+#9 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#11 {main} REQUEST_URI=/luckd/product/participate/favicon1.ico
+2016/08/16 07:54:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('participate')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/partici...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/participate/images/flags/gb.png
+2016/08/16 07:54:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('participate')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/partici...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/participate/images/flags/gb.png
+2016/08/16 07:54:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('participate')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/partici...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/participate/favicon1.ico
+2016/08/16 07:54:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 07:54:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 07:54:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/images/flags/gb.png
+2016/08/16 07:54:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/favicon1.ico
+2016/08/16 07:54:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 07:54:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 07:54:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/images/flags/gb.png
+2016/08/16 07:54:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/favicon1.ico
+2016/08/16 07:55:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 07:55:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 07:55:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/images/flags/gb.png
+2016/08/16 07:55:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/favicon1.ico
+2016/08/16 07:55:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 07:55:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 07:55:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/images/flags/gb.png
+2016/08/16 07:55:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/favicon1.ico
+2016/08/16 07:55:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 07:55:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 07:55:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 07:55:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 07:55:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 07:55:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/images/flags/gb.png
+2016/08/16 07:55:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/favicon1.ico
+2016/08/16 07:55:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 07:55:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 07:55:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 07:56:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 07:57:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 07:57:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 07:57:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 07:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 07:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 07:58:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 07:58:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 07:58:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 07:58:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 07:58:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 07:58:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/images/flags/gb.png
+2016/08/16 07:58:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/favicon1.ico
+2016/08/16 07:58:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:00:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:00:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 08:00:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 08:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:00:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 08:00:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 08:00:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:01:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 08:01:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 08:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 08:01:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "today".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('today')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('today')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/today')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/today
+2016/08/16 08:01:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:01:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:02:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:02:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:26:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 08:26:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 08:26:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:27:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:27:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:28:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:28:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:28:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 08:28:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:28:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:28:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:31:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 08:31:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:31:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:32:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('update')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/update/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/banner/update/images/flags/gb.png
+2016/08/16 08:33:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('update')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/update/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/banner/update/favicon1.ico
+2016/08/16 08:33:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('update')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/update/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/banner/update/images/flags/gb.png
+2016/08/16 08:33:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('update')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/update/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/banner/update/favicon1.ico
+2016/08/16 08:33:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:33:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:34:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:34:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:34:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/l...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/loader_light_blue.gif
+2016/08/16 08:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/imageresizestorelogo.php/en1_1471332865.jpg".' in C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('js/imageresizes...')
+#1 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/luckd/js/imageresizestorelogo.php/en1_1471332865.jpg?name=en1_1471332865.jpg&image=http://localhost/luckd/images/banner/women1_1471332865.jpg
+2016/08/16 08:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/e...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/error.gif
+2016/08/16 08:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/imageresizestorelogo.php/en1_1471332865.jpg".' in C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('js/imageresizes...')
+#1 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/luckd/js/imageresizestorelogo.php/en1_1471332865.jpg?name=en1_1471332865.jpg&image=http://localhost/luckd/images/banner/women1_1471332865.jpg
+2016/08/16 08:34:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:34:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:34:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:34:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/l...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/loader_light_blue.gif
+2016/08/16 08:34:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/imageresizestorelogo.php/en2_1471332887.jpg".' in C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('js/imageresizes...')
+#1 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/luckd/js/imageresizestorelogo.php/en2_1471332887.jpg?name=en2_1471332887.jpg&image=http://localhost/luckd/images/banner/women2_1471332887.jpg
+2016/08/16 08:34:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/imageresizestorelogo.php/en2_1471332887.jpg".' in C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('js/imageresizes...')
+#1 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/luckd/js/imageresizestorelogo.php/en2_1471332887.jpg?name=en2_1471332887.jpg&image=http://localhost/luckd/images/banner/women2_1471332887.jpg
+2016/08/16 08:34:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/e...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/error.gif
+2016/08/16 08:34:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('banner/images/f...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/banner/images/flags/gb.png
+2016/08/16 08:35:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:35:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:36:45 [error] [php] mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user ''@'localhost' (using password: NO) (C:\UniServer\www\luckd\protected\views\product\list.php:19)
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CBaseController.php(88): ProductController->renderInternal()
+#1 C:\UniServer\www\luckd\yii\framework\web\CController.php(866): ProductController->renderFile()
+#2 C:\UniServer\www\luckd\yii\framework\web\CController.php(779): ProductController->renderPartial()
+#3 C:\UniServer\www\luckd\protected\controllers\ProductController.php(57): ProductController->render()
+#4 C:\UniServer\www\luckd\yii\framework\web\actions\CInlineAction.php(50): ProductController->actionList()
+#5 C:\UniServer\www\luckd\yii\framework\web\CController.php(300): CInlineAction->runWithParams()
+#6 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): ProductController->runAction()
+#7 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CAccessControlFilter->filter()
+#9 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): ProductController->filterAccessControl()
+#10 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#12 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): ProductController->runActionWithFilters()
+#13 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): ProductController->run()
+#14 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#15 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 C:\UniServer\www\luckd\index.php(14): CWebApplication->run()
+REQUEST_URI=/luckd/product/list
+in C:\UniServer\www\luckd\protected\views\product\list.php (19)
+in C:\UniServer\www\luckd\protected\controllers\ProductController.php (57)
+in C:\UniServer\www\luckd\index.php (14)
+2016/08/16 08:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:38:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 08:38:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:40:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:41:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:41:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:41:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:41:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:41:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 08:41:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 09:28:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 09:28:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 09:28:41 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "discovery".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:875
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(779): CController->renderPartial('discovery', NULL, true)
+#1 C:\UniServer\www\luckd\protected\controllers\SiteController.php(43): CController->render('discovery')
+#2 C:\UniServer\www\luckd\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionDiscovery()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 C:\UniServer\www\luckd\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('discovery')
+#7 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/discovery')
+#8 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#10 {main} REQUEST_URI=/luckd/site/discovery
+2016/08/16 09:29:39 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "discovery".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:875
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(779): CController->renderPartial('discovery', NULL, true)
+#1 C:\UniServer\www\luckd\protected\controllers\SiteController.php(43): CController->render('discovery')
+#2 C:\UniServer\www\luckd\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionDiscovery()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 C:\UniServer\www\luckd\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('discovery')
+#7 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/discovery')
+#8 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#10 {main} REQUEST_URI=/luckd/site/discovery
+2016/08/16 09:29:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 09:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 09:30:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 09:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 09:32:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 09:32:09 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "myluckydraw".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:875
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(779): CController->renderPartial('myluckydraw', Array, true)
+#1 C:\UniServer\www\luckd\protected\controllers\UserController.php(508): CController->render('myluckydraw', Array)
+#2 C:\UniServer\www\luckd\yii\framework\web\actions\CInlineAction.php(50): UserController->actionMyluckydraw()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#7 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#10 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('myluckydraw')
+#12 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/myluckydra...')
+#13 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#14 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#15 {main} REQUEST_URI=/luckd/user/myluckydraw
+2016/08/16 09:32:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 09:44:59 [error] [php] Undefined variable: num_rowsUser (C:\UniServer\www\luckd\protected\views\user\myluckydraw.php:82)
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(866): UserController->renderFile()
+#1 C:\UniServer\www\luckd\yii\framework\web\CController.php(779): UserController->renderPartial()
+#2 C:\UniServer\www\luckd\protected\controllers\UserController.php(508): UserController->render()
+#3 C:\UniServer\www\luckd\yii\framework\web\actions\CInlineAction.php(50): UserController->actionMyluckydraw()
+#4 C:\UniServer\www\luckd\yii\framework\web\CController.php(300): CInlineAction->runWithParams()
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#6 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CAccessControlFilter->filter()
+#8 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#9 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#11 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): UserController->runActionWithFilters()
+#12 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): UserController->run()
+#13 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#14 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 C:\UniServer\www\luckd\index.php(14): CWebApplication->run()
+REQUEST_URI=/luckd/user/myluckydraw
+in C:\UniServer\www\luckd\protected\views\user\myluckydraw.php (82)
+in C:\UniServer\www\luckd\protected\controllers\UserController.php (508)
+in C:\UniServer\www\luckd\index.php (14)
+2016/08/16 09:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 09:45:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 09:47:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 09:47:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 09:47:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:03:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:03:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 10:03:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 10:04:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:04:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 10:04:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 10:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:04:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:05:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:06:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:06:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:06:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:06:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:06:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:07:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:09:05 [error] [php] Undefined variable: burl (C:\UniServer\www\luckd\protected\views\product\view.php:130)
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(866): ProductController->renderFile()
+#1 C:\UniServer\www\luckd\yii\framework\web\CController.php(779): ProductController->renderPartial()
+#2 C:\UniServer\www\luckd\protected\controllers\ProductController.php(82): ProductController->render()
+#3 unknown(0): ProductController->actionView()
+#4 C:\UniServer\www\luckd\yii\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs()
+#5 C:\UniServer\www\luckd\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(300): CInlineAction->runWithParams()
+#7 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): ProductController->runAction()
+#8 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CAccessControlFilter->filter()
+#10 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): ProductController->filterAccessControl()
+#11 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#13 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): ProductController->runActionWithFilters()
+#14 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): ProductController->run()
+#15 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#16 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#17 C:\UniServer\www\luckd\index.php(14): CWebApplication->run()
+REQUEST_URI=/luckd/product/1
+in C:\UniServer\www\luckd\protected\views\product\view.php (130)
+in C:\UniServer\www\luckd\protected\controllers\ProductController.php (82)
+in C:\UniServer\www\luckd\index.php (14)
+2016/08/16 10:09:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:12:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:12:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/images/flags/gb.png
+2016/08/16 10:12:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('friendprofile')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/friendprof...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/user/friendprofile/favicon1.ico
+2016/08/16 10:12:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:13:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:14:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:14:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:14:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:15:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 10:15:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:15:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:16:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:16:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('user/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/user/images/flags/gb.png
+2016/08/16 10:16:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:16:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/16 10:16:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:16:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/images/...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/product/images/flags/gb.png
+2016/08/16 10:16:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/i...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/images/flags/gb.png
+2016/08/16 10:16:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\UniServer\www\luckd\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\UniServer\www\luckd\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\UniServer\www\luckd\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 C:\UniServer\www\luckd\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\UniServer\www\luckd\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\UniServer\www\luckd\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\UniServer\www\luckd\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('index')
+#9 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/index/f...')
+#10 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/luckd/product/index/favicon1.ico
+2016/08/16 10:17:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\UniServer\www\luckd\yii\framework\web\CController.php:477
+Stack trace:
+#0 C:\UniServer\www\luckd\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 C:\UniServer\www\luckd\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('site/images/fla...')
+#3 C:\UniServer\www\luckd\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\UniServer\www\luckd\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/luckd/site/images/flags/gb.png
+2016/08/19 23:22:46 [error] [php] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead (/home/luckydsh/public_html/luckd/js/databaseconnection.php:5)
+Stack trace:
+#0 /home/luckydsh/public_html/luckd/yii/framework/web/CBaseController.php(119): require()
+#1 /home/luckydsh/public_html/luckd/yii/framework/web/CBaseController.php(88): SiteController->renderInternal()
+#2 /home/luckydsh/public_html/luckd/yii/framework/web/CController.php(866): SiteController->renderFile()
+#3 /home/luckydsh/public_html/luckd/yii/framework/web/CController.php(779): SiteController->renderPartial()
+#4 /home/luckydsh/public_html/luckd/protected/controllers/SiteController.php(143): SiteController->render()
+#5 /home/luckydsh/public_html/luckd/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#6 /home/luckydsh/public_html/luckd/yii/framework/web/CController.php(300): CInlineAction->runWithParams()
+#7 /home/luckydsh/public_html/luckd/yii/framework/web/CController.php(278): SiteController->runAction()
+#8 /home/luckydsh/public_html/luckd/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#9 /home/luckydsh/public_html/luckd/yii/framework/web/CWebApplication.php(277): SiteController->run()
+#10 /home/luckydsh/public_html/luckd/yii/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#11 /home/luckydsh/public_html/luckd/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#12 /home/luckydsh/public_html/luckd/index.php(14): CWebApplication->run()
+REQUEST_URI=/luckd/
+in /home/luckydsh/public_html/luckd/js/databaseconnection.php (5)
+in /home/luckydsh/public_html/luckd/protected/views/site/index.php (16)
+in /home/luckydsh/public_html/luckd/protected/controllers/SiteController.php (143)
