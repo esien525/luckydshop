@@ -1,9 +1,15 @@
-<?php
+<?php 
+	include('js/language.php');
 	$burl=Yii::app()->request->baseUrl;
+
+	$temp_product_title = "product_title".$lang;
+	$temp_product_description = "product_description".$lang;
+	$temp_product_importantinfo = "product_importantinfo".$lang;
+
 	$product_id=$model->product_id;
-	$product_title=$model->product_title;
-	$product_description=$model->product_description;   $product_description= str_replace("\n", "<br />",$product_description);
-	$product_importantinfo=$model->product_importantinfo;   $product_importantinfo= str_replace("\n", "<br />",$product_importantinfo);
+	$product_title=$model->$temp_product_title;
+	$product_description=$model->$temp_product_description;   $product_description= str_replace("\n", "<br />",$product_description);
+	$product_importantinfo=$model->$temp_product_importantinfo;   $product_importantinfo= str_replace("\n", "<br />",$product_importantinfo);
 	$product_photo=$model->product_photo;
 	$product_photo2=$model->product_photo2;
 	$product_photo3=$model->product_photo3;

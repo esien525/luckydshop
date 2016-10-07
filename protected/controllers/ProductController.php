@@ -197,6 +197,9 @@ class ProductController extends Controller
 				$model->product_photo10 = $fileName10;	
 			}
 
+			if(isset($_POST['Product']['product_category']) && $_POST['Product']['product_category']!==array() && $_POST['Product']['product_category']!='')
+                        $model->product_category=implode(',',$_POST['Product']['product_category']);
+
 			$valid=$model->validate();
 
 			if($valid)
@@ -369,6 +372,9 @@ class ProductController extends Controller
 				$model->product_photo10 = $fileName10;	
 			}
 			
+			if(isset($_POST['Product']['product_category']) && $_POST['Product']['product_category']!==array() && $_POST['Product']['product_category']!='')
+                        $model->product_category=implode(',',$_POST['Product']['product_category']);
+			
 			$valid=$model->validate();
 
 			if($valid)
@@ -419,6 +425,9 @@ class ProductController extends Controller
 				}
 			}
 		}
+
+		if(isset($model->product_category) && $model->product_category!=='')
+                $model->product_category=explode(',',$model->product_category);
 
 		$this->render('update',array(
 			'model'=>$model,

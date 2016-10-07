@@ -1,18 +1,19 @@
 <?php
 
 /**
- * This is the model class for table "pages".
+ * This is the model class for table "nav_bar".
  *
- * The followings are the available columns in table 'pages':
- * @property string $pages_id
- * @property string $pages_title
- * @property string $pages_content
+ * The followings are the available columns in table 'nav_bar':
+ * @property string $nb_id
+ * @property string $nb_title
+ * @property string $nb_title_cn
+ * @property string $nb_title_bm
  */
-class Pages extends CActiveRecord
+class NavBar extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
-	 * @return Pages the static model class
+	 * @return NavBar the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -24,7 +25,7 @@ class Pages extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'pages';
+		return 'nav_bar';
 	}
 
 	/**
@@ -35,12 +36,12 @@ class Pages extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('pages_title, pages_title_cn, pages_title_bm', 'length', 'max'=>300),
-			array('pages_title, pages_title_cn, pages_title_bm', 'required'),
-			array('pages_content, pages_content_cn, pages_content_bm', 'safe'),
+			array('nb_title, nb_title_cn, nb_title_bm', 'length', 'max'=>50),
+			array('nb_link', 'length', 'max'=>200),
+			array('nb_title, nb_title_cn, nb_title_bm, nb_link', 'required'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('pages_id, pages_title, pages_content', 'safe', 'on'=>'search'),
+			array('nb_id, nb_title, nb_title_cn, nb_title_bm', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -61,13 +62,11 @@ class Pages extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'pages_id' => 'Pages',
-			'pages_title' => 'Pages Title',
-			'pages_title_cn' => 'Pages Title (CN)',
-			'pages_title_bm' => 'Pages Title (BM)',
-			'pages_content' => 'Pages Content',
-			'pages_content_cn' => 'Pages Content (CN)',
-			'pages_content_bm' => 'Pages Content (BM)',
+			'nb_id' => 'Nb',
+			'nb_title' => 'Navigation Bar Title',
+			'nb_title_cn' => 'Navigation Bar Title (CN)',
+			'nb_title_bm' => 'Navigation Bar Title (BM)',
+			'nb_link' => 'Navigation Bar Link',
 		);
 	}
 
@@ -82,9 +81,10 @@ class Pages extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('pages_id',$this->pages_id,true);
-		$criteria->compare('pages_title',$this->pages_title,true);
-		$criteria->compare('pages_content',$this->pages_content,true);
+		$criteria->compare('nb_id',$this->nb_id,true);
+		$criteria->compare('nb_title',$this->nb_title,true);
+		$criteria->compare('nb_title_cn',$this->nb_title_cn,true);
+		$criteria->compare('nb_title_bm',$this->nb_title_bm,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

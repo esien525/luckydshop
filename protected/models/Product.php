@@ -49,12 +49,12 @@ class Product extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('product_coin', 'numerical', 'integerOnly'=>true),
-			array('product_title,product_photo,product_description,product_price,product_coin,product_start_date, product_end_date', 'required'),
+			array('product_title,product_title_cn,product_title_bm,product_photo,product_description,product_description_cn,product_description_bm,product_price,product_coin,product_start_date, product_end_date', 'required'),
 			array('product_price, product_promotion_price', 'numerical'),
-			array('product_title', 'length', 'max'=>500),
+			array('product_title, product_title_cn, product_title_bm', 'length', 'max'=>500),
 			array('product_allow_groupbuy, product_status, product_luckydraw_status, product_featured', 'length', 'max'=>100),
 			array('product_posted_by', 'length', 'max'=>20),
-			array('product_description, product_importantinfo, product_photo2, product_photo3, product_photo4, product_photo5, product_photo6, product_photo7, product_photo8, product_photo9, product_photo10, product_start_date, product_end_date, product_posted_date', 'safe'),
+			array('product_category, product_importantinfo, product_importantinfo_cn, product_importantinfo_bm, product_photo2, product_photo3, product_photo4, product_photo5, product_photo6, product_photo7, product_photo8, product_photo9, product_photo10, product_start_date, product_end_date, product_posted_date', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('product_id, product_title, product_description, product_importantinfo, product_photo, product_price, product_promotion_price, product_coin, product_allow_groupbuy, product_start_date, product_end_date, product_status, product_luckydraw_status, product_featured, product_posted_date, product_posted_by', 'safe', 'on'=>'search'),
@@ -80,8 +80,15 @@ class Product extends CActiveRecord
 		return array(
 			'product_id' => 'Product',
 			'product_title' => 'Title',
+			'product_title_cn' => 'Title (CN)',
+			'product_title_bm' => 'Title (BM)',
 			'product_description' => 'Description',
+			'product_description_cn' => 'Description (CN)',
+			'product_description_bm' => 'Description (BM)',
 			'product_importantinfo' => 'Important info',
+			'product_importantinfo_cn' => 'Important info (CN)',
+			'product_importantinfo_bm' => 'Important info (BM)',
+			'product_category' => 'Product Category',
 			'product_photo' => 'Main Photo',
 			'product_photo2' => 'Photo 2',
 			'product_photo3' => 'Photo 3',
@@ -167,5 +174,33 @@ class Product extends CActiveRecord
 			$product_photo = Yii::app()->request->baseUrl."/".$p->product_photo;
 		}
 		return $product_photo;
+	}
+
+	public function category_name($product_category)
+	{
+		$cat_name = '';
+		$arrname = explode(',',$product_category);
+		
+		for ($i = 0; $i < count($arrname); $i++)
+		{
+			$criteria=new CDbCriteria;
+			$criteria->select="*";
+			$criteria->condition="cat_id='$arrname[$i]'";
+			$sql=ProductCategory::model()->findAll($criteria);
+			$count_cat = ProductCategory::model()->count($criteria);
+			if ($count_cat == 0)
+			{
+				$venue_type_name .= "Unknown@@Unknown@@Unknown, ";
+			}
+			else
+			{
+				foreach ($sql as $p)
+				{
+					$cat_name .= $p->cat_name."@@".$p->cat_name_cn."@@".$p->cat_name_bm.", ";
+				}
+			}
+		}	
+		
+		return trim($cat_name, ", ");	
 	}
 }

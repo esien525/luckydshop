@@ -95,6 +95,20 @@
 <div class="wrapper"> 
   <!-- Header section -->
   <header class="header header--sticky">
+  	<div class="language_div">
+  		<?php
+  		include('js/language.php');
+  		?>
+  		<div class="container">
+	  		<ul class='language_ul'>
+	  			<li class='language_option <?php echo $elang;?>'><a href='<?php echo $lurl;?>'>EN</a></li>
+	  			<li class='language_option'>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+	  			<li class='language_option <?php echo $clang;?>'><a href='<?php echo $lurl.$lang_cn;?>'>CN</a></li>
+	  			<li class='language_option'>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+	  			<li class='language_option <?php echo $blang;?>'><a href='<?php echo $lurl.$lang_bm;?>'>BM</a></li>
+	  		</ul>
+  		</div>
+  	</div>
     <div class="header-line hidden-xs">
       <div class="container">
         <div class="pull-left">
@@ -130,8 +144,8 @@
     </div>
     <div class="header__dropdowns-container">
       <div class="header__dropdowns">
-        <div class="header__search pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button search-open"
-><span class="icon icon-search"></span></a> </div>
+        <!-- <div class="header__search pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button search-open"
+><span class="icon icon-search"></span></a> </div> -->
         <?php if(!Yii::app()->user->isGuest){?>
 		<div class="header__cart pull-left">
           <?php
@@ -197,13 +211,26 @@
         <div class="pull-left search-focus-fade" id="slidemenu">
           <div class="slidemenu-close visible-xs">✕</div>
           <ul class="nav navbar-nav">     
-            <li><?php echo CHtml::link('<span class="link-name">Home</span><span class="caret caret--dots"></span>',  array('site/index')); ?></li>
-			<li><?php echo CHtml::link('<span class="link-name">Featured Product</span><span class="caret caret--dots"></span>',  array('product/featured')); ?></li>
-			
-			<li><?php echo CHtml::link('<span class="link-name">Product List</span><span class="caret caret--dots"></span>',  array('product/list')); ?></li>
-			<li><?php echo CHtml::link('<span class="link-name">Draw Result</span><span class="caret caret--dots"></span>',  array('site/drawresult')); ?></li>
-			<li><?php echo CHtml::link('<span class="link-name">In Touch</span><span class="caret caret--dots"></span>',  array('site/contact')); ?></li>
-			
+          <?php
+            $queryInfo="Select * FROM nav_bar";
+            $resultInfo=mysql_query($queryInfo);
+            
+            while($rowInfo=mysql_fetch_array($resultInfo))
+            {
+                $nb_id=$rowInfo['nb_id'];
+                $nb_title=$rowInfo['nb_title'.$lang];
+                $nb_link=$rowInfo['nb_link'];
+
+                if ($lang_param!='') 
+                {
+                  echo "<li>".CHtml::link('<span class="link-name">'.$nb_title.'</span><span class="caret caret--dots"></span>',  array($nb_link,'lang'=>$lang_type))."</li>";
+                }
+                else
+                {
+                  echo "<li>".CHtml::link('<span class="link-name">'.$nb_title.'</span><span class="caret caret--dots"></span>',  array($nb_link))."</li>";
+                }
+            }
+          ?>			
           </ul>
         </div>
       </div>
@@ -221,30 +248,7 @@
 	
   </div>
   <footer class="footer">
-    <div class="footer__links hidden-xs">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="h-links-list">
-              <ul>
-                <li><?php echo CHtml::link('Conditions of Use',  array('site/conditionofuse')); ?></li>
-				<li><?php echo CHtml::link('Privacy Notice',  array('site/privacynotice')); ?></li>
-                <li><?php echo CHtml::link('Orders and Returns',  array('site/orderandreturns')); ?></li>
-                
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="h-links-list text-right">
-              <ul>
-                <li><?php echo CHtml::link('About Us',  array('site/aboutus')); ?></li>
-                <li><?php echo CHtml::link('Contact Us',  array('site/contact')); ?></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <div class="footer__column-links">
       <div class="back-to-top"> <a href="#top" class="btn btn--round btn--round--lg"><span class="icon-arrow-up"></span></a></div>
       <div class="container">
@@ -258,22 +262,39 @@
 			$queryInfo="Select * FROM pages WHERE pages_id=1";
 			$resultInfo=mysql_query($queryInfo);
 			
-			while($rowInfo=mysql_fetch_array($resultInfo)){
-				$pages_title=$rowInfo['pages_title'];
-				$pages_content=$rowInfo['pages_content'];  $pages_content= str_replace("\n", "<br />",$pages_content);
+			while($rowInfo=mysql_fetch_array($resultInfo))
+      {
+				$pages_title=$rowInfo['pages_title'.$lang];
+				$pages_content=$rowInfo['pages_content'.$lang];  $pages_content= str_replace("\n", "<br />",$pages_content);
 			}
 			echo substr($pages_content, 0, 200); if(strlen($pages_content)>200) { echo "..."; }
-			echo CHtml::link('more',  array('site/aboutus'));
+			echo CHtml::link('  more',  array('site/aboutus'));
 			?></p>
           </div>
           <div class="col-sm-3 col-md-2 mobile-collapse">
             <h5 class="title text-uppercase mobile-collapse__title">Information </h5>
             <div class="v-links-list mobile-collapse__content">
               <ul>
-                <li><?php echo CHtml::link('About Us',  array('site/aboutus')); ?></li>
-                <li><?php echo CHtml::link('Orders and Returns',  array('site/orderandreturns')); ?></li>
-                <li><?php echo CHtml::link('Privacy Notice',  array('site/privacynotice')); ?></li>
-                <li><?php echo CHtml::link('Conditions of Use',  array('site/conditionofuse')); ?></li>
+                <?php
+                  $queryInfo="Select * FROM pages";
+                  $resultInfo=mysql_query($queryInfo);
+                  
+                  while($rowInfo=mysql_fetch_array($resultInfo))
+                  {
+                      $pages_id=$rowInfo['pages_id'];
+                      $pages_title=$rowInfo['pages_title'.$lang];
+                      $pages_link=$rowInfo['pages_link'];
+
+                      if ($lang_param!='') 
+                      {
+                        echo "<li>".CHtml::link($pages_title,  array($pages_link,'lang'=>$lang_type))."</li>";
+                      }
+                      else
+                      {
+                        echo "<li>".CHtml::link($pages_title,  array($pages_link))."</li>";
+                      }
+                  }
+                ?>
               </ul>
             </div>
           </div>
@@ -332,32 +353,7 @@
         </div>
       </div>
     </div>
-    <div class="footer__settings visible-xs">
-      <div class="container text-center">
-        <div class="dropdown pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown" aria-expanded="false"><span class="header__dropdowns__button__symbol">$</span></a>
-          <ul class="dropdown-menu animated fadeIn" role="menu">
-            <li class="currency__item currency__item--active"><a href="#">$ USA Dollar</a></li>
-            <li class="currency__item"><a href="#">€ Euro</a></li>
-            <li class="currency__item"><a href="#">£ British Pound</a></li>
-          </ul>
-        </div>
-        <div class="dropdown pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown" aria-expanded="false"><span class="flag"><img src="images/flags/gb.png" alt=""></span></a>
-          <ul class="dropdown-menu animated fadeIn languages languages--flag" role="menu">
-            <li class="languages__item languages__item--active"><a href="#"><span class="languages__item__flag flag"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/flags/gb.png" alt=""></span><span class="languages__item__label">En</span></a></li>
-            <li class="languages__item"><a href="#"><span class="languages__item__flag flag"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/flags/de.png" alt=""></span><span class="languages__item__label">De</span></a></li>
-            <li class="languages__item"><a href="#"><span class="languages__item__flag flag"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/flags/fr.png" alt=""></span><span class="languages__item__label">Fr</span></a></li>
-          </ul>
-        </div>
-        <div class="dropdown pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown" aria-expanded="false">Account</a>
-          <ul class="dropdown-menu animated fadeIn" role="menu">
-            <li><a href="#">Account</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Compare</a></li>
-            <li><a href="#">Checkout</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    
     <div class="footer__bottom">      
       <div class="container">
         <div class="pull-left text-uppercase">© 2016 <a href="#">TEKPRO</a>. All Rights Reserved. </div>

@@ -14,24 +14,70 @@
 				
 			
 				<?php echo $form->errorSummary($model); ?>
-			
-				<div class="row">
-					<?php echo $form->labelEx($model,'product_title'); ?>
-					<?php echo $form->textField($model,'product_title',array('size'=>60,'maxlength'=>500,'style'=>'width:100%')); ?>
-					<?php echo $form->hiddenField($model,'product_photo',array('size'=>60,'maxlength'=>500,'style'=>'width:100%')); ?>
-				</div>
-			
-				<div class="row">
-					<?php echo $form->labelEx($model,'product_description'); ?>
-					<?php echo $form->textArea($model,'product_description',array('rows'=>15, 'cols'=>50,'style'=>'width:100%')); ?>
-					
-				</div>
-			
-				<div class="row">
-					<?php echo $form->labelEx($model,'product_importantinfo'); ?>
-					<?php echo $form->textArea($model,'product_importantinfo',array('rows'=>6, 'cols'=>50,'style'=>'width:100%')); ?>
-					
-				</div>
+				<input class='lang_input' id="tab1" type="radio" name="tabs" checked>
+				<label class='lang_label' for="tab1">English</label>
+
+				<input class='lang_input' id="tab2" type="radio" name="tabs">
+				<label class='lang_label' for="tab2">Chinese</label>
+
+				<input class='lang_input' id="tab3" type="radio" name="tabs">
+				<label class='lang_label' for="tab3">BM</label>
+				
+				<section id="content1">
+					<div class="row">
+						<?php echo $form->labelEx($model,'product_title'); ?>
+						<?php echo $form->textField($model,'product_title',array('size'=>60,'maxlength'=>500,'style'=>'width:100%')); ?>
+						<?php echo $form->hiddenField($model,'product_photo',array('size'=>60,'maxlength'=>500,'style'=>'width:100%')); ?>
+					</div>
+				
+					<div class="row">
+						<?php echo $form->labelEx($model,'product_description'); ?>
+						<?php echo $form->textArea($model,'product_description',array('rows'=>15, 'cols'=>50,'style'=>'width:100%')); ?>
+						
+					</div>
+				
+					<div class="row">
+						<?php echo $form->labelEx($model,'product_importantinfo'); ?>
+						<?php echo $form->textArea($model,'product_importantinfo',array('rows'=>6, 'cols'=>50,'style'=>'width:100%')); ?>
+						
+					</div>
+				</section>
+				<section id="content2">
+					<div class="row">
+						<?php echo $form->labelEx($model,'product_title_cn'); ?>
+						<?php echo $form->textField($model,'product_title_cn',array('size'=>60,'maxlength'=>500,'style'=>'width:100%')); ?>
+					</div>
+				
+					<div class="row">
+						<?php echo $form->labelEx($model,'product_description_cn'); ?>
+						<?php echo $form->textArea($model,'product_description_cn',array('rows'=>15, 'cols'=>50,'style'=>'width:100%')); ?>
+						
+					</div>
+				
+					<div class="row">
+						<?php echo $form->labelEx($model,'product_importantinfo_cn'); ?>
+						<?php echo $form->textArea($model,'product_importantinfo_cn',array('rows'=>6, 'cols'=>50,'style'=>'width:100%')); ?>
+						
+					</div>
+				</section>
+				<section id="content3">
+					<div class="row">
+						<?php echo $form->labelEx($model,'product_title_bm'); ?>
+						<?php echo $form->textField($model,'product_title_bm',array('size'=>60,'maxlength'=>500,'style'=>'width:100%')); ?>
+					</div>
+				
+					<div class="row">
+						<?php echo $form->labelEx($model,'product_description_bm'); ?>
+						<?php echo $form->textArea($model,'product_description_bm',array('rows'=>15, 'cols'=>50,'style'=>'width:100%')); ?>
+						
+					</div>
+				
+					<div class="row">
+						<?php echo $form->labelEx($model,'product_importantinfo_bm'); ?>
+						<?php echo $form->textArea($model,'product_importantinfo_bm',array('rows'=>6, 'cols'=>50,'style'=>'width:100%')); ?>
+						
+					</div>
+				</section>
 			
 				<table>
 					<tr>
@@ -93,7 +139,35 @@
 							));?>
 						</td>
 					</tr>
-					
+					<tr>
+						<td><?php echo $form->labelEx($model,'product_category'); ?></td>
+						<td>
+							<?php
+								$category_criteria=new CDbCriteria;		
+								$category_criteria->order="cat_name asc";
+								$cat = ProductCategory::model()->findAll($category_criteria);
+								$list_type = CHtml::listData($cat, 'cat_id','cat_name' 
+					          );
+								echo $form->checkBoxList($model,'product_category',
+									$list_type,
+									array(
+										'template'=>'<div style="float:left;padding:1px">{input}{label}</div>',
+										'separator'=>'',
+										'labelOptions'=>array(
+											'style'=> '
+												padding-left:10px;
+												float: left;
+												min-width:100px;
+												margin-right:10px;
+											'),
+										  'style'=>'float:left;',
+										  )                              
+									  );
+							?>
+							<div class='clear'></div>
+							<?php echo $form->error($model,'product_category'); ?>
+						</td>
+					</tr>
 					<tr>
 						<td><?php echo $form->labelEx($model,'product_allow_groupbuy'); ?></td>
 						<td><?php echo $form->dropdownlist($model,'product_allow_groupbuy',array('Yes'=>'Yes','No'=>'No')); ?></td>

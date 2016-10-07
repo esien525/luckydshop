@@ -1,12 +1,13 @@
 <?php
 include("js/databaseconnection.php");
+include("js/language.php");
 
 $queryInfo="Select * FROM pages WHERE pages_id=2";
 $resultInfo=mysql_query($queryInfo);
 
 while($rowInfo=mysql_fetch_array($resultInfo)){
-	$pages_title=$rowInfo['pages_title'];
-	$pages_content=$rowInfo['pages_content'];  $pages_content= str_replace("\n", "<br />",$pages_content);
+	$pages_title=$rowInfo['pages_title'.$lang];
+	$pages_content=$rowInfo['pages_content'.$lang];  $pages_content= str_replace("\n", "<br />",$pages_content);
 }
 ?>
 

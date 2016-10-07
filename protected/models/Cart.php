@@ -42,6 +42,7 @@ class Cart extends CActiveRecord
 		return array(
 			array('cart_status', 'numerical', 'integerOnly'=>true),
 			array('cart_total_amount', 'numerical'),
+			array('cart_deliver_address', 'required'),
 			array('cart_user, cart_payment_refno', 'length', 'max'=>20),
 			array('cart_payment_status', 'length', 'max'=>10),
 			array('cart_payment_remark', 'length', 'max'=>200),
@@ -77,6 +78,7 @@ class Cart extends CActiveRecord
 			'cart_payment_refno' => 'Cart Payment Refno',
 			'cart_payment_remark' => 'Cart Payment Remark',
 			'cart_payment_time' => 'Cart Payment Time',
+			'cart_deliver_address' => 'Shipping Address',
 		);
 	}
 

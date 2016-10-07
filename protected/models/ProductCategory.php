@@ -1,18 +1,19 @@
 <?php
 
 /**
- * This is the model class for table "pages".
+ * This is the model class for table "product_category".
  *
- * The followings are the available columns in table 'pages':
- * @property string $pages_id
- * @property string $pages_title
- * @property string $pages_content
+ * The followings are the available columns in table 'product_category':
+ * @property string $cat_id
+ * @property string $cat_name
+ * @property string $cat_name_cn
+ * @property string $cat_name_bm
  */
-class Pages extends CActiveRecord
+class ProductCategory extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
-	 * @return Pages the static model class
+	 * @return ProductCategory the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -24,7 +25,7 @@ class Pages extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'pages';
+		return 'product_category';
 	}
 
 	/**
@@ -35,12 +36,11 @@ class Pages extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('pages_title, pages_title_cn, pages_title_bm', 'length', 'max'=>300),
-			array('pages_title, pages_title_cn, pages_title_bm', 'required'),
-			array('pages_content, pages_content_cn, pages_content_bm', 'safe'),
+			array('cat_name, cat_name_cn, cat_name_bm', 'length', 'max'=>200),
+			array('cat_name, cat_name_cn, cat_name_bm', 'required'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('pages_id, pages_title, pages_content', 'safe', 'on'=>'search'),
+			array('cat_id, cat_name, cat_name_cn, cat_name_bm', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -61,13 +61,10 @@ class Pages extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'pages_id' => 'Pages',
-			'pages_title' => 'Pages Title',
-			'pages_title_cn' => 'Pages Title (CN)',
-			'pages_title_bm' => 'Pages Title (BM)',
-			'pages_content' => 'Pages Content',
-			'pages_content_cn' => 'Pages Content (CN)',
-			'pages_content_bm' => 'Pages Content (BM)',
+			'cat_id' => 'Cat',
+			'cat_name' => 'Category Name',
+			'cat_name_cn' => 'Category Name Chinese',
+			'cat_name_bm' => 'Category Name BM',
 		);
 	}
 
@@ -82,9 +79,10 @@ class Pages extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('pages_id',$this->pages_id,true);
-		$criteria->compare('pages_title',$this->pages_title,true);
-		$criteria->compare('pages_content',$this->pages_content,true);
+		$criteria->compare('cat_id',$this->cat_id,true);
+		$criteria->compare('cat_name',$this->cat_name,true);
+		$criteria->compare('cat_name_cn',$this->cat_name_cn,true);
+		$criteria->compare('cat_name_bm',$this->cat_name_bm,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -1,3 +1,6 @@
+<?php
+include('js/language.php');
+?>
 <section class="content" id="slider"> 
       
       <!-- Slider section --> 
@@ -70,62 +73,77 @@
 			//$queryProductF="Select * FROM product WHERE product_status='Active'";
 			$resultProductF=mysql_query($queryProductF);
 			$num_rowsProductF = mysql_num_rows($resultProductF);
-			if($num_rowsProductF>0){
-				
-		?>
-    <section class="content">
-      <div class="container"> 
-        
-        <!-- Modal -->
-        <div class="modal quick-view zoom" id="quickView"  style="opacity: 1">
-          <div class="modal-dialog">
-			<div id="modalLoader-wrapper"><div id="modalLoader"></div></div>
-            <div class="modal-content">
-			</div>
-          </div>
-        </div>
-        <!-- /.modal -->
-        
-        <h2 class="text-center text-uppercase">Featured Products</h2>
-        <div class="row product-carousel mobile-special-arrows animated-arrows product-grid four-in-row">
-			<?php
-			while($rowProductF=mysql_fetch_array($resultProductF)){
-				$product_id=$rowProductF['product_id'];
-				$product_title=$rowProductF['product_title'];
-				$product_description=$rowProductF['product_description'];
-				$product_importantinfo=$rowProductF['product_importantinfo'];
-				$product_photo=$rowProductF['product_photo'];
-				$product_price=$rowProductF['product_price'];
-				$product_promotion_price=$rowProductF['product_promotion_price'];
-				$product_coin=$rowProductF['product_coin']; 
-				$product_allow_groupbuy=$rowProductF['product_allow_groupbuy'];
-				$product_start_date=$rowProductF['product_start_date'];
-				$product_end_date=$rowProductF['product_end_date'];
-				$product_status=$rowProductF['product_status'];
-				$product_luckydraw_status=$rowProductF['product_luckydraw_status'];
-				$product_featured=$rowProductF['product_featured'];
-				$product_posted_date=$rowProductF['product_posted_date'];
-				$product_posted_by=$rowProductF['product_posted_by'];
-				
+			if($num_rowsProductF>0)
+			{
 			?>
-          <div class="product-preview-wrapper">
-            <div class="product-preview">
-              <div class="product-preview__image"><?php echo CHtml::link("<img src='$burl/$product_photo' data-lazy='$burl/$product_photo'/>",  array('product/index','id'=>$product_id)); ?></div>
-              <div class="product-preview__label product-preview__label--left product-preview__label--sale"><span>HOT!</span></div>
-              <div class="product-preview__info text-center">
-                <div class="product-preview__info__title">
-                  <h2><?php echo CHtml::link("$product_title",  array('product/index','id'=>$product_id)); ?></h2>
-                </div>
-				<div class="price-box">0/<?php echo number_format($product_coin);?> D-Coins</div>
-                
-              </div>
-            </div>
-          </div>
-		  <?php }?>
-          
-        </div>
-      </div>
-    </section>
+			    <section class="content">
+					<div class="container"> 
+						<!-- Modal -->
+						<div class="modal quick-view zoom" id="quickView"  style="opacity: 1">
+						  <div class="modal-dialog">
+							<div id="modalLoader-wrapper"><div id="modalLoader"></div></div>
+						    <div class="modal-content">
+							</div>
+						  </div>
+						</div>
+						<!-- /.modal -->
+
+						<h2 class="text-center text-uppercase">Featured Products</h2>
+						<div class="row product-carousel mobile-special-arrows animated-arrows product-grid four-in-row">
+							<?php
+							while($rowProductF=mysql_fetch_array($resultProductF)){
+								$product_id=$rowProductF['product_id'];
+								$product_title=$rowProductF['product_title'.$lang];
+								$product_description=$rowProductF['product_description'.$lang];
+								$product_importantinfo=$rowProductF['product_importantinfo'.$lang];
+								$product_photo=$rowProductF['product_photo'];
+								$product_price=$rowProductF['product_price'];
+								$product_promotion_price=$rowProductF['product_promotion_price'];
+								$product_coin=$rowProductF['product_coin']; 
+								$product_allow_groupbuy=$rowProductF['product_allow_groupbuy'];
+								$product_start_date=$rowProductF['product_start_date'];
+								$product_end_date=$rowProductF['product_end_date'];
+								$product_status=$rowProductF['product_status'];
+								$product_luckydraw_status=$rowProductF['product_luckydraw_status'];
+								$product_featured=$rowProductF['product_featured'];
+								$product_posted_date=$rowProductF['product_posted_date'];
+								$product_posted_by=$rowProductF['product_posted_by'];
+								
+							?>
+						  <div class="product-preview-wrapper">
+						    <div class="product-preview">
+						      <div class="product-preview__image"><?php 
+						      if ($lang_param!='') 
+                			  {
+						      	echo CHtml::link("<img src='$burl/$product_photo' data-lazy='$burl/$product_photo'/>",  array('product/index','id'=>$product_id,'lang'=>$lang_type)); 
+						      }
+						      else
+						      {
+						      	echo CHtml::link("<img src='$burl/$product_photo' data-lazy='$burl/$product_photo'/>",  array('product/index','id'=>$product_id)); 
+						      }?></div>
+						      <div class="product-preview__label product-preview__label--left product-preview__label--sale"><span>HOT!</span></div>
+						      <div class="product-preview__info text-center">
+						        <div class="product-preview__info__title">
+						          <h2><?php 
+						          	if ($lang_param!='') 
+                					{
+						          		echo CHtml::link("$product_title",  array('product/index','id'=>$product_id,'lang'=>$lang_type));
+						          	}
+						          	else
+						          	{
+						          		echo CHtml::link("$product_title",  array('product/index','id'=>$product_id));
+						          	} ?></h2>
+						        </div>
+								<div class="price-box">0/<?php echo number_format($product_coin);?> D-Coins</div>
+						        
+						      </div>
+						    </div>
+						  </div>
+						  <?php }?>
+						  
+						</div>
+					</div>
+			    </section>
 	<?php }?>
 	<?php
 		$datenow=date("Y-m-d H:i:s");
@@ -150,9 +168,9 @@
 					
 					while($rowProductLatest=mysql_fetch_array($resultProductLatest)){
 						$Lproduct_id=$rowProductLatest['product_id'];
-						$Lproduct_title=$rowProductLatest['product_title'];
-						$Lproduct_description=$rowProductLatest['product_description'];
-						$Lproduct_importantinfo=$rowProductLatest['product_importantinfo'];
+						$Lproduct_title=$rowProductLatest['product_title'.$lang];
+						$Lproduct_description=$rowProductLatest['product_description'.$lang];
+						$Lproduct_importantinfo=$rowProductLatest['product_importantinfo'.$lang];
 						$Lproduct_photo=$rowProductLatest['product_photo'];
 						$Lproduct_price=$rowProductLatest['product_price'];
 						$Lproduct_promotion_price=$rowProductLatest['product_promotion_price'];
@@ -171,13 +189,31 @@
 				<div class="product-preview-wrapper">
 					<div class="product-preview">
 					  <div class="product-preview__image">
-						<?php echo CHtml::link("<img src='$burl/$Lproduct_photo' data-lazy='$burl/$Lproduct_photo'/>",  array('product/index','id'=>$Lproduct_id)); ?>
+						<?php 
+						if ($lang_param!='') 
+						{
+							echo CHtml::link("<img src='$burl/$Lproduct_photo' data-lazy='$burl/$Lproduct_photo'/>",  array('product/index','id'=>$Lproduct_id,'lang'=>$lang_type));
+						}
+						else
+						{
+							echo CHtml::link("<img src='$burl/$Lproduct_photo' data-lazy='$burl/$Lproduct_photo'/>",  array('product/index','id'=>$Lproduct_id));
+						}
+						 ?>
 					  </div>
 					  <div class="product-preview__label product-preview__label--left product-preview__label--new"><span>new</span></div>
 					  
 					  <div class="product-preview__info text-center">
 						<div class="product-preview__info__title">
-						  <h2><?php echo CHtml::link("$Lproduct_title",  array('product/index','id'=>$Lproduct_id)); ?></h2>
+						  <h2><?php 
+						  	if ($lang_param!='') 
+        					{
+				          		echo CHtml::link("$Lproduct_title",  array('product/index','id'=>$Lproduct_id,'lang'=>$lang_type));
+				          	}
+				          	else
+				          	{
+				          		echo CHtml::link("$Lproduct_title",  array('product/index','id'=>$Lproduct_id));
+				          	}
+						   ?></h2>
 						</div>
 						<div class="price-box">0/<?php echo number_format($Lproduct_coin);?> D-Coins</div>
 					  </div>
@@ -216,9 +252,9 @@
 			<?php
 			while($rowProductOpening=mysql_fetch_array($resultProductOpening)){
 				$Oproduct_id=$rowProductOpening['product_id'];
-				$Oproduct_title=$rowProductOpening['product_title'];
-				$Oproduct_description=$rowProductOpening['product_description'];
-				$Oproduct_importantinfo=$rowProductOpening['product_importantinfo'];
+				$Oproduct_title=$rowProductOpening['product_title'.$lang];
+				$Oproduct_description=$rowProductOpening['product_description'.$lang];
+				$Oproduct_importantinfo=$rowProductOpening['product_importantinfo'.$lang];
 				$Oproduct_photo=$rowProductOpening['product_photo'];
 				$Oproduct_price=$rowProductOpening['product_price'];
 				$Oproduct_promotion_price=$rowProductOpening['product_promotion_price'];
@@ -236,7 +272,16 @@
           <div class="product-preview-wrapper">
             <div class="product-preview">
               <div class="product-preview__image">
-				<?php echo CHtml::link("<img src='$burl/$Oproduct_photo' data-lazy='$burl/$Oproduct_photo'/>",  array('product/index','id'=>$Oproduct_id)); ?>
+				<?php 
+				if ($lang_param!='') 
+				{
+					echo CHtml::link("<img src='$burl/$Oproduct_photo' data-lazy='$burl/$Oproduct_photo'/>",  array('product/index','id'=>$Oproduct_id,'lang'=>$lang_type));
+				}
+				else
+				{
+					echo CHtml::link("<img src='$burl/$Oproduct_photo' data-lazy='$burl/$Oproduct_photo'/>",  array('product/index','id'=>$Oproduct_id));
+				}
+				 ?>
 				
 			  </div>
               
@@ -245,7 +290,16 @@
 						
 				</div>
                 <div class="product-preview__info__title">
-                  <h2><?php echo CHtml::link("$Oproduct_title",  array('product/index','id'=>$Oproduct_id)); ?></h2>
+                  <h2><?php 
+                  	if ($lang_param!='') 
+					{
+		          		echo CHtml::link("$Oproduct_title",  array('product/index','id'=>$Oproduct_id,'lang'=>$lang_type));
+		          	}
+		          	else
+		          	{
+		          		echo CHtml::link("$Oproduct_title",  array('product/index','id'=>$Oproduct_id));
+		          	}
+                   ?></h2>
                 </div>
                 <div class="price-box"><?php echo number_format($Oproduct_coin);?>/<?php echo number_format($Oproduct_coin);?> D-Coins</div>
               </div>

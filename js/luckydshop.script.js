@@ -292,19 +292,48 @@ luckydshop.extend({
 			var count = (action == '1') ? 1 : -1;
 
 			var values = {'count':count, 'ac_id':ac_id,'cart_id':cart_id};
-			    $.ajax({
-					type: "GET",
-					url:  JS_SERVER+JS_ROOT+"/addCart/changeQuantity",
-					data: values
-					}).success(function( response ) {
-						var data = response.split('@@@');
-						$('#ac_subtotal_'+ac_id).html(data[0]);
-						$('#subtotal').html(data[1]);
-						$('#grand_total').html(data[1]);
-						$('#load'+ac_id).delay(3000).hide();
-					}).fail(function( response ){
-						console.log(response);
-						});
+		    $.ajax({
+				type: "GET",
+				url:  JS_SERVER+JS_ROOT+"/addCart/changeQuantity",
+				data: values
+				}).success(function( response ) {
+					var data = response.split('@@@');
+					$('#ac_subtotal_'+ac_id).html(data[0]);
+					$('#subtotal').html(data[1]);
+					$('#grand_total').html(data[1]);
+					$('#load'+ac_id).delay(3000).hide();
+					//alert(data[2])
+				}).fail(function( response ){
+					console.log(response);
+					});
+		},
+		checkout: function(cart_id)
+		{
+			$('#address_err').html('');
+			if($('#cart_deliver_address').val().trim().length <= 0)
+			{
+				$('#address_err').html('Address cannot be blank!');
+				return;
+			}
+
+			var values = {'cart_deliver_address':$('#cart_deliver_address').val(),'cart_id':cart_id};
+		    $.ajax({
+				type: "GET",
+				url:  JS_SERVER+JS_ROOT+"/cart/address",
+				data: values
+				}).success(function( response ) {
+					if (response=="Shipping Address Saved.") 
+					{
+						//submit payment form
+					}
+					else
+					{
+						alert(response);
+					}
+				}).fail(function( response ){
+					console.log(response);
+					});
+			
 		},
 	},
 });

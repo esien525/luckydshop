@@ -1,6 +1,6 @@
 <?php
 
-class CartController extends Controller
+class ProductCategoryController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -27,11 +27,8 @@ class CartController extends Controller
 	{
 		return array(
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('mycart','address'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','index','view','create','update'),
+				'actions'=>array('index','view','create','update','admin','delete'),
+				//'users'=>array('@'),
 				'expression'=>'Yii::app()->user->usertype=="Administrator"',
 			),
 			array('deny',  // deny all users
@@ -44,29 +41,6 @@ class CartController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionMycart()
-	{
-		$currentUser = Yii::app()->user->id;
-		$cart = $this->loadMyCart($currentUser);
-
-		$cart_id = $cart->cart_id;
-		$acs = AddCart::getProduct($cart_id);
-
-		// $model=$this->loadModel($cart_id);
-		// if(isset($_POST['Cart']))
-		// {
-		// 	$model->attributes=$_POST['Cart'];
-		// 	if($model->save())
-		// 		$this->redirect(array('view','id'=>$model->cart_id));
-		// }
-
-		$this->render('mycart',array(
-			'cart'=>$cart,
-			'acs' => $acs,
-			//'model' => $model,
-		));
-	}
-
 	public function actionView($id)
 	{
 		$this->render('view',array(
@@ -80,16 +54,16 @@ class CartController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Cart;
+		$model=new ProductCategory;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Cart']))
+		if(isset($_POST['ProductCategory']))
 		{
-			$model->attributes=$_POST['Cart'];
+			$model->attributes=$_POST['ProductCategory'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->cart_id));
+				$this->redirect(array('view','id'=>$model->cat_id));
 		}
 
 		$this->render('create',array(
@@ -109,11 +83,11 @@ class CartController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Cart']))
+		if(isset($_POST['ProductCategory']))
 		{
-			$model->attributes=$_POST['Cart'];
+			$model->attributes=$_POST['ProductCategory'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->cart_id));
+				$this->redirect(array('view','id'=>$model->cat_id));
 		}
 
 		$this->render('update',array(
@@ -128,17 +102,17 @@ class CartController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		if(Yii::app()->request->isPostRequest)
-		{
+		// if(Yii::app()->request->isPostRequest)
+		// {
 			// we only allow deletion via POST request
 			$this->loadModel($id)->delete();
 
 			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 			if(!isset($_GET['ajax']))
 				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-		}
-		else
-			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
+		// }
+		// else
+		// 	throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
 	}
 
 	/**
@@ -146,7 +120,7 @@ class CartController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Cart');
+		$dataProvider=new CActiveDataProvider('ProductCategory');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -157,10 +131,10 @@ class CartController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Cart('search');
+		$model=new ProductCategory('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Cart']))
-			$model->attributes=$_GET['Cart'];
+		if(isset($_GET['ProductCategory']))
+			$model->attributes=$_GET['ProductCategory'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -174,24 +148,9 @@ class CartController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Cart::model()->findByPk($id);
+		$model=ProductCategory::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
-		return $model;
-	}
-
-	public function loadMyCart($user_id)
-	{
-		$model=Cart::model()->find(array(
-		    'select'=>'*',
-		    'condition'=>'cart_status="0" and cart_user=:userID',
-		    'params'=>array(':userID'=>$user_id),
-		));
-		if($model===null)
-		{
-			$this->render('empty_cart');
-			exit;
-		}
 		return $model;
 	}
 
@@ -201,29 +160,10 @@ class CartController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='cart-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='product-category-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
-	}
-
-	public function actionAddress($cart_deliver_address,$cart_id)
-	{
-		$currentUser = Yii::app()->user->id;
-		$model=Cart::model()->find(array(
-		    'select'=>'*',
-		    'condition'=>'cart_id=:cartID and cart_user=:userID',
-		    'params'=>array(':cartID'=>$cart_id,':userID'=>$currentUser),
-		));
-		if($model===null)
-		{
-			echo "Cart does not exists!";
-			exit;
-		}
-		$model->cart_deliver_address = $cart_deliver_address;
-		$model->save();
-
-		echo "Shipping Address Saved.";
 	}
 }

@@ -17,6 +17,7 @@ include("js/databaseconnection.php");
             <h4 class="text-uppercase"><b>Control Panel</b></h4>
             <ul class="category-list">
 				  <li><?php echo CHtml::link("Product Management",  array('product/admin'));?></li>
+				  <li><?php echo CHtml::link("Product Category Management",  array('productCategory/admin'));?></li>
 				  <li><?php echo CHtml::link("User Management",  array('user/admin'));?></li>
 				  <li><?php echo CHtml::link("Package Management",  array('package/admin'));?></li>
 				  <li><?php echo CHtml::link("Banner Management",  array('banner/admin'));?></li>
@@ -31,6 +32,19 @@ include("js/databaseconnection.php");
 							$pages_title=$rowInfo['pages_title'];
 				  ?>
 				  <li style="margin-left:25px"><?php echo CHtml::link("$pages_title",  array('pages/view','id'=>$pages_id));?></li>
+				  <?php
+						}
+				  ?>
+				  <li>Navigation Bar Management</li>
+				  <?php
+						$queryInfo="Select * FROM nav_bar";
+						$resultInfo=mysql_query($queryInfo);
+						
+						while($rowInfo=mysql_fetch_array($resultInfo)){
+							$nb_id=$rowInfo['nb_id'];
+							$nb_title=$rowInfo['nb_title'];
+				  ?>
+				  <li style="margin-left:25px"><?php echo CHtml::link("$nb_title",  array('navBar/view','id'=>$nb_id));?></li>
 				  <?php
 						}
 				  ?>

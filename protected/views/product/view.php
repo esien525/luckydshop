@@ -9,8 +9,31 @@
 	$burl=Yii::app()->request->baseUrl; 
 	$product_id=$model->product_id;
 	$product_title=$model->product_title;
+	$product_title_cn=$model->product_title_cn;
+	$product_title_bm=$model->product_title_bm;
 	$product_description=$model->product_description;   $product_description= str_replace("\n", "<br />",$product_description);
+	$product_description_cn=$model->product_description_cn;   $product_description_cn= str_replace("\n", "<br />",$product_description_cn);
+	$product_description_bm=$model->product_description_bm;   $product_description_bm= str_replace("\n", "<br />",$product_description_bm);
 	$product_importantinfo=$model->product_importantinfo;   $product_importantinfo= str_replace("\n", "<br />",$product_importantinfo);
+	$product_importantinfo_cn=$model->product_importantinfo_cn;   $product_importantinfo_cn= str_replace("\n", "<br />",$product_importantinfo_cn);
+	$product_importantinfo_bm=$model->product_importantinfo_bm;   $product_importantinfo_bm= str_replace("\n", "<br />",$product_importantinfo_bm);
+	
+	$product_category = '';
+	$product_category_cn = '';
+	$product_category_bm = '';
+	$product_categories = Product::category_name($model->product_category);
+	$arrcategories = explode(',', $product_categories);
+	for ($i=0; $i < count($arrcategories) ; $i++) 
+	{ 
+		$arrcat = explode('@@', $arrcategories[$i]);
+		$product_category .= $arrcat[0].", ";
+		$product_category_cn .= $arrcat[1].", ";
+		$product_category_bm .= $arrcat[2].", ";
+	}
+	$product_category = trim($product_category, ", ");
+	$product_category_cn = trim($product_category_cn, ", ");
+	$product_category_bm = trim($product_category_bm, ", ");
+
 	$product_photo=$model->product_photo;
 	$product_photo2=$model->product_photo2;
 	$product_photo3=$model->product_photo3;
@@ -36,137 +59,429 @@
 <table  class="padding-table1">
 	<tr>		
 		<td>
-			<table>
-				<tr>
-					<td><b>Title</b></td>
-					<td><b>:</b></td>
-					<td><?php echo $product_title?></td>
-				</tr>
-				<tr>
-					<td><b>Date</b></td><td><b>:</b></td>
-					<td><?php echo $product_start_date?> to <?php echo $product_end_date?></td>
-				</tr>
-				<tr>
-					<td colspan="3"><b>Description :</b></td>
-				</tr>
-				<tr>
-					<td colspan="3"><?php echo $product_description?></td>
-				</tr>
-				<tr>
-					<td colspan="3"><b>Important Info :</b></td>
-				</tr>
-				<tr>
-					<td colspan="3"><?php echo $product_importantinfo?></td>
-				</tr>
-				<tr>
-					<td><b>Price</b></td><td><b>:</b></td>
-					<td>RM <?php echo $product_price?></td>
-				</tr>
-				<tr>
-					<td><b>Promotion Price</b></td><td><b>:</b></td>
-					<td>RM <?php echo $product_promotion_price?></td>
-				</tr>
-				<tr>
-					<td><b>Coins</b></td><td><b>:</b></td>
-					<td><?php echo $product_coin?></td>
-				</tr>
-				<tr>
-					<td><b>Allowed Group Buy</b></td><td><b>:</b></td>
-					<td><?php echo $product_allow_groupbuy?></td>
-				</tr>
-				<tr>
-					<td><b>Status</b></td><td><b>:</b></td>
-					<td><?php echo $product_status?></td>
-				</tr>
-				<tr>
-					<td><b>Lucky Draw Status</b></td><td><b>:</b></td>
-					<td><?php echo $product_luckydraw_status?></td>
-				</tr>
-				<tr>
-					<td><b>Featured on Home Page</b></td><td><b>:</b></td>
-					<td><?php echo $product_featured?></td>
-				</tr>
-				<tr>
-					<td><b>Posted on</b></td><td><b>:</b></td>
-					<td><?php echo $product_posted_date?></td>
-				</tr>
-				<tr>
-					<td><b>Posted by</b></td><td><b>:</b></td>
-					<td><?php echo $product_posted_date?></td>
-				</tr>
-				<tr>
-					<td colspan="3"><b>Product Image :</b></td>
-				</tr>
-				<tr>
-					<td colspan="3">
-						<div class='product-preview-wrapper product-photo-view'>
-							<img src='<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $product_photo?>' style='width:100%'/>
-						</div>
-						<?php
-							if ($product_photo2 != '') 
-							{
-								echo "<div class='product-preview-wrapper product-photo-view'>
-									<img src='".Yii::app()->request->baseUrl."/".$product_photo2."' style='width:100%'/>
-								</div>";
-							}
-							if ($product_photo3 != '') 
-							{
-								echo "<div class='product-preview-wrapper product-photo-view'>
-									<img src='".Yii::app()->request->baseUrl."/".$product_photo3."' style='width:100%'/>
-								</div>";
-							}
-							if ($product_photo4 != '') 
-							{
-								echo "<div class='product-preview-wrapper product-photo-view'>
-									<img src='".Yii::app()->request->baseUrl."/".$product_photo4."' style='width:100%'/>
-								</div>";
-							}
-							if ($product_photo5 != '') 
-							{
-								echo "<div class='product-preview-wrapper product-photo-view'>
-									<img src='".Yii::app()->request->baseUrl."/".$product_photo5."' style='width:100%'/>
-								</div>";
-							}
-							if ($product_photo6 != '') 
-							{
-								echo "<div class='product-preview-wrapper product-photo-view'>
-									<img src='".Yii::app()->request->baseUrl."/".$product_photo6."' style='width:100%'/>
-								</div>";
-							}
-							if ($product_photo7 != '') 
-							{
-								echo "<div class='product-preview-wrapper product-photo-view'>
-									<img src='".Yii::app()->request->baseUrl."/".$product_photo7."' style='width:100%'/>
-								</div>";
-							}
-							if ($product_photo8 != '') 
-							{
-								echo "<div class='product-preview-wrapper product-photo-view'>
-									<img src='".Yii::app()->request->baseUrl."/".$product_photo8."' style='width:100%'/>
-								</div>";
-							}
-							if ($product_photo9 != '') 
-							{
-								echo "<div class='product-preview-wrapper product-photo-view'>
-									<img src='".Yii::app()->request->baseUrl."/".$product_photo9."' style='width:100%'/>
-								</div>";
-							}
-							if ($product_photo10 != '') 
-							{
-								echo "<div class='product-preview-wrapper product-photo-view'>
-									<img src='".Yii::app()->request->baseUrl."/".$product_photo10."' style='width:100%'/>
-								</div>";
-							}
-						?>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="3">
-						<?php echo CHtml::link('<button class="btn btn--wd btn--with-icon btn--sm wave">Update Product Info</button>',  array('update','id'=>$product_id)); ?>
-					</td>
-				</tr>
-				
-			</table>
+			<input class='lang_input' id="tab1" type="radio" name="tabs" checked>
+			<label class='lang_label' for="tab1">English</label>
+
+			<input class='lang_input' id="tab2" type="radio" name="tabs">
+			<label class='lang_label' for="tab2">Chinese</label>
+
+			<input class='lang_input' id="tab3" type="radio" name="tabs">
+			<label class='lang_label' for="tab3">BM</label>
+			
+			<section id="content1">
+				<table>
+					<tr>
+						<td><b>Title</b></td>
+						<td><b>:</b></td>
+						<td><?php echo $product_title?></td>
+					</tr>
+					<tr>
+						<td><b>Date</b></td><td><b>:</b></td>
+						<td><?php echo $product_start_date?> to <?php echo $product_end_date?></td>
+					</tr>
+					<tr>
+						<td colspan="3"><b>Description :</b></td>
+					</tr>
+					<tr>
+						<td colspan="3"><?php echo $product_description?></td>
+					</tr>
+					<tr>
+						<td colspan="3"><b>Important Info :</b></td>
+					</tr>
+					<tr>
+						<td colspan="3"><?php echo $product_importantinfo?></td>
+					</tr>
+					<tr>
+						<td><b>Category</b></td>
+						<td><b>:</b></td>
+						<td><?php echo $product_category?></td>
+					</tr>
+					<tr>
+						<td><b>Price</b></td><td><b>:</b></td>
+						<td>RM <?php echo $product_price?></td>
+					</tr>
+					<tr>
+						<td><b>Promotion Price</b></td><td><b>:</b></td>
+						<td>RM <?php echo $product_promotion_price?></td>
+					</tr>
+					<tr>
+						<td><b>Coins</b></td><td><b>:</b></td>
+						<td><?php echo $product_coin?></td>
+					</tr>
+					<tr>
+						<td><b>Allowed Group Buy</b></td><td><b>:</b></td>
+						<td><?php echo $product_allow_groupbuy?></td>
+					</tr>
+					<tr>
+						<td><b>Status</b></td><td><b>:</b></td>
+						<td><?php echo $product_status?></td>
+					</tr>
+					<tr>
+						<td><b>Lucky Draw Status</b></td><td><b>:</b></td>
+						<td><?php echo $product_luckydraw_status?></td>
+					</tr>
+					<tr>
+						<td><b>Featured on Home Page</b></td><td><b>:</b></td>
+						<td><?php echo $product_featured?></td>
+					</tr>
+					<tr>
+						<td><b>Posted on</b></td><td><b>:</b></td>
+						<td><?php echo $product_posted_date?></td>
+					</tr>
+					<tr>
+						<td><b>Posted by</b></td><td><b>:</b></td>
+						<td><?php echo $product_posted_date?></td>
+					</tr>
+					<tr>
+						<td colspan="3"><b>Product Image :</b></td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class='product-preview-wrapper product-photo-view'>
+								<img src='<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $product_photo?>' style='width:100%'/>
+							</div>
+							<?php
+								if ($product_photo2 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo2."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo3 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo3."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo4 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo4."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo5 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo5."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo6 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo6."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo7 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo7."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo8 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo8."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo9 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo9."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo10 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo10."' style='width:100%'/>
+									</div>";
+								}
+							?>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<?php echo CHtml::link('<button class="btn btn--wd btn--with-icon btn--sm wave">Update Product Info</button>',  array('update','id'=>$product_id)); ?>
+						</td>
+					</tr>
+					
+				</table>
+			</section>
+			<section id="content2">
+				<table>
+					<tr>
+						<td><b>Title (CN)</b></td>
+						<td><b>:</b></td>
+						<td><?php echo $product_title_cn?></td>
+					</tr>
+					<tr>
+						<td><b>Date</b></td><td><b>:</b></td>
+						<td><?php echo $product_start_date?> to <?php echo $product_end_date?></td>
+					</tr>
+					<tr>
+						<td colspan="3"><b>Description (CN) :</b></td>
+					</tr>
+					<tr>
+						<td colspan="3"><?php echo $product_description_cn?></td>
+					</tr>
+					<tr>
+						<td colspan="3"><b>Important Info (CN) :</b></td>
+					</tr>
+					<tr>
+						<td colspan="3"><?php echo $product_importantinfo_cn?></td>
+					</tr>
+					<tr>
+						<td><b>Category (CN)</b></td>
+						<td><b>:</b></td>
+						<td><?php echo $product_category_cn?></td>
+					</tr>
+					<tr>
+						<td><b>Price</b></td><td><b>:</b></td>
+						<td>RM <?php echo $product_price?></td>
+					</tr>
+					<tr>
+						<td><b>Promotion Price</b></td><td><b>:</b></td>
+						<td>RM <?php echo $product_promotion_price?></td>
+					</tr>
+					<tr>
+						<td><b>Coins</b></td><td><b>:</b></td>
+						<td><?php echo $product_coin?></td>
+					</tr>
+					<tr>
+						<td><b>Allowed Group Buy</b></td><td><b>:</b></td>
+						<td><?php echo $product_allow_groupbuy?></td>
+					</tr>
+					<tr>
+						<td><b>Status</b></td><td><b>:</b></td>
+						<td><?php echo $product_status?></td>
+					</tr>
+					<tr>
+						<td><b>Lucky Draw Status</b></td><td><b>:</b></td>
+						<td><?php echo $product_luckydraw_status?></td>
+					</tr>
+					<tr>
+						<td><b>Featured on Home Page</b></td><td><b>:</b></td>
+						<td><?php echo $product_featured?></td>
+					</tr>
+					<tr>
+						<td><b>Posted on</b></td><td><b>:</b></td>
+						<td><?php echo $product_posted_date?></td>
+					</tr>
+					<tr>
+						<td><b>Posted by</b></td><td><b>:</b></td>
+						<td><?php echo $product_posted_date?></td>
+					</tr>
+					<tr>
+						<td colspan="3"><b>Product Image :</b></td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class='product-preview-wrapper product-photo-view'>
+								<img src='<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $product_photo?>' style='width:100%'/>
+							</div>
+							<?php
+								if ($product_photo2 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo2."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo3 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo3."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo4 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo4."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo5 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo5."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo6 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo6."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo7 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo7."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo8 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo8."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo9 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo9."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo10 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo10."' style='width:100%'/>
+									</div>";
+								}
+							?>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<?php echo CHtml::link('<button class="btn btn--wd btn--with-icon btn--sm wave">Update Product Info</button>',  array('update','id'=>$product_id)); ?>
+						</td>
+					</tr>
+					
+				</table>
+			</section>
+			<section id="content3">
+				<table>
+					<tr>
+						<td><b>Title (BM)</b></td>
+						<td><b>:</b></td>
+						<td><?php echo $product_title_bm?></td>
+					</tr>
+					<tr>
+						<td><b>Date</b></td><td><b>:</b></td>
+						<td><?php echo $product_start_date?> to <?php echo $product_end_date?></td>
+					</tr>
+					<tr>
+						<td colspan="3"><b>Description (BM) :</b></td>
+					</tr>
+					<tr>
+						<td colspan="3"><?php echo $product_description_bm?></td>
+					</tr>
+					<tr>
+						<td colspan="3"><b>Important Info (BM) :</b></td>
+					</tr>
+					<tr>
+						<td colspan="3"><?php echo $product_importantinfo_bm?></td>
+					</tr>
+					<tr>
+						<td><b>Category (BM)</b></td>
+						<td><b>:</b></td>
+						<td><?php echo $product_category_bm?></td>
+					</tr>
+					<tr>
+						<td><b>Price</b></td><td><b>:</b></td>
+						<td>RM <?php echo $product_price?></td>
+					</tr>
+					<tr>
+						<td><b>Promotion Price</b></td><td><b>:</b></td>
+						<td>RM <?php echo $product_promotion_price?></td>
+					</tr>
+					<tr>
+						<td><b>Coins</b></td><td><b>:</b></td>
+						<td><?php echo $product_coin?></td>
+					</tr>
+					<tr>
+						<td><b>Allowed Group Buy</b></td><td><b>:</b></td>
+						<td><?php echo $product_allow_groupbuy?></td>
+					</tr>
+					<tr>
+						<td><b>Status</b></td><td><b>:</b></td>
+						<td><?php echo $product_status?></td>
+					</tr>
+					<tr>
+						<td><b>Lucky Draw Status</b></td><td><b>:</b></td>
+						<td><?php echo $product_luckydraw_status?></td>
+					</tr>
+					<tr>
+						<td><b>Featured on Home Page</b></td><td><b>:</b></td>
+						<td><?php echo $product_featured?></td>
+					</tr>
+					<tr>
+						<td><b>Posted on</b></td><td><b>:</b></td>
+						<td><?php echo $product_posted_date?></td>
+					</tr>
+					<tr>
+						<td><b>Posted by</b></td><td><b>:</b></td>
+						<td><?php echo $product_posted_date?></td>
+					</tr>
+					<tr>
+						<td colspan="3"><b>Product Image :</b></td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class='product-preview-wrapper product-photo-view'>
+								<img src='<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $product_photo?>' style='width:100%'/>
+							</div>
+							<?php
+								if ($product_photo2 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo2."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo3 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo3."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo4 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo4."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo5 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo5."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo6 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo6."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo7 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo7."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo8 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo8."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo9 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo9."' style='width:100%'/>
+									</div>";
+								}
+								if ($product_photo10 != '') 
+								{
+									echo "<div class='product-preview-wrapper product-photo-view'>
+										<img src='".Yii::app()->request->baseUrl."/".$product_photo10."' style='width:100%'/>
+									</div>";
+								}
+							?>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<?php echo CHtml::link('<button class="btn btn--wd btn--with-icon btn--sm wave">Update Product Info</button>',  array('update','id'=>$product_id)); ?>
+						</td>
+					</tr>
+					
+				</table>
+			</section>				
 		</td>
 	</tr>
 </table>

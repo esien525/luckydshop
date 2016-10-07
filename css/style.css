@@ -15098,3 +15098,94 @@ table.table-total h2 {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* form language tab */
+.lang_input 
+{
+  display: none;
+}
+
+.lang_label 
+{
+  display: inline-block !important;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+.lang_label:before 
+{
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+
+.lang_label:hover 
+{
+  color: #888;
+  cursor: pointer;
+}
+
+#tab1:checked + label,
+#tab2:checked + label,
+#tab3:checked + label 
+{
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3
+{
+  display: block;
+}
+#content1, #content2, #content3
+{
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+.errMsg
+{
+  color: red;
+  font-size: 0.9em;
+}
+/* end form language tab */
+
+/* language select div */
+.language_div
+{
+    width :100%;
+    padding :3px;
+    background: black;
+}
+.language_ul
+{
+    float: right;
+    color: white;
+    list-style-type: none;
+    margin-bottom: 2px;
+}
+.language_ul a
+{
+  color: white;
+}
+.language_ul a:hover
+{
+  color: #536dfe;
+}
+.language_option
+{
+    float: left;
+}
+.lselected
+{
+    font-weight: bold;
+}

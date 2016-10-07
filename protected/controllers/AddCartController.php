@@ -180,7 +180,7 @@ class AddCartController extends Controller
 			mysql_query("UPDATE `cart` SET `cart_total_amount`='$total_amount' where cart_id='$cart_id'");
 		}
 
-		echo "RM ".number_format($subtotal_amount,2,'.',',')."@@@RM ".number_format($total_amount,2,'.',',');
+		echo "RM ".number_format($subtotal_amount,2,'.',',')."@@@RM ".number_format($total_amount,2,'.',',')."@@@".$total_amount;
 	}
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.

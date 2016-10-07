@@ -109,27 +109,36 @@
 					<div class="divider divider--xxs"></div>
 				</div>
 			</div>
-			<div class="col-md-3 aside-column">			
+			<div class="col-md-3 aside-column">
+				<?php //echo $this->renderPartial('_mycartform', array('model'=>$model)); ?>
+				<div class="divider divider--xs"></div>
+				<div class="card card--collapse open">
+					<h4 class="h-pad-sm card-title">SHIPPING ADDRESS</h4>
+					<div class="card-content">
+						<p>Please enter your shipping address.</p>
+						<textarea style="resize:none" class="textarea--wd textarea--wd--full" required="required" name="cart_deliver_address" id="cart_deliver_address" placeholder="Shipping Address"><?php echo $cart->cart_deliver_address;?></textarea>
+						<div id="address_err" class="errMsg"></div>
+						<div class="divider divider--xs"></div>
+					</div>
+				</div>
 				<div class="divider divider--xs"></div>
 				<h4 class="h-pad-sm">CART TOTALS</h4>
-					<table class="table table-total">
-						<tbody>
-							<tr>
-								<th class="text-left"> Subtotal </th>
-								<th class="text-right" id="subtotal">RM <?php echo number_format(AddCart::getTotalAmount($cart_id),2,'.',',');?></th>
-							</tr>
-							<tr>
-								<td class="text-left"><h2>Grand Total</h2></td>
-								<td class="text-right"><h2 id="grand_total">RM <?php echo number_format(AddCart::getTotalAmount($cart_id),2,'.',',');?></h2></td>
-							</tr>
-						</tbody>
-					</table>
-					<div class="divider divider--xs"></div>
-					<div class="text-center"> 
-						<a href="#" class="btn btn--wd btn--xl">Proceed to checkout</a>
-						<div class="divider divider--xxs"></div>
-						<p>Checkout with Multiple Addresses</p>
-					</div>
+				<table class="table table-total">
+					<tbody>
+						<tr>
+							<th class="text-left"> Subtotal </th>
+							<th class="text-right" id="subtotal">RM <?php echo number_format(AddCart::getTotalAmount($cart_id),2,'.',',');?></th>
+						</tr>
+						<tr>
+							<td class="text-left"><h2>Grand Total</h2></td>
+							<td class="text-right"><h2 id="grand_total">RM <?php echo number_format(AddCart::getTotalAmount($cart_id),2,'.',',');?></h2></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="divider divider--xs"></div>
+				<div class="text-center"> 
+					<a class="btn btn--wd btn--xl" style="cursor: pointer;" onclick='luckydshop.cart.checkout(<?php echo $cart_id;?>)'>Proceed to checkout</a>
+					<div class="divider divider--xxs"></div>
 				</div>
 			</div>
    			<?php
@@ -137,4 +146,4 @@
    		?>
 	</div>
 </section>
-	
+
